@@ -155,8 +155,8 @@ const ADMIN_PASS='Admin1234';
    Leave both values as empty strings '' to fall back to local base64 (5 MB limit).
    ─────────────────────────────────────────────────────────────────── */
 const CLOUDINARY_CONFIG={
-  cloudName:   '',   // e.g. 'dju7slwij'
-  uploadPreset:'',   // e.g. 'ni9kv4sx'
+  cloudName:   'dju7slwij',   // e.g. 'dju7slwij'
+  uploadPreset:'ni9kv4sx',   // e.g. 'ni9kv4sx'
 };
 function cloudinaryReady(){return !!(CLOUDINARY_CONFIG.cloudName&&CLOUDINARY_CONFIG.uploadPreset);}
 async function uploadToCloudinary(file){
