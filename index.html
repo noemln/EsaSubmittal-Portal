@@ -2246,7 +2246,7 @@ function App(){
         'Hi '+recipient.name+',\n\nA new submittal has been sent to you for review:\n\n'+
         '  Submittal #:  '+item.no+'\n  Section:      '+item.specSection+' – '+item.sectionTitle+'\n'+
         '  Description:  '+item.description+'\n  Submitted by: '+user.name+' ('+user.company+')\n  Date:         '+item.dateSubmitted+
-        '\n\nPlease log in to the portal to review this submittal:\nhttps://noemln.github.io/vigilant-bassoon/\n\n'+PROJECT+'\n'+OWNER);
+        '\n\nPlease log in to the portal to review this submittal:\nhttps://noemln.github.io/EsaSubmittal-Portal/\n\n'+PROJECT+'\n'+OWNER);
       await fbSetSubmittals(updated.map(s=>s.id===ts?{...s,lastNotified:ts}:s));
     }
     setForm({specSection:'',description:'',attachment:null,notes:'',sendTo:''});
